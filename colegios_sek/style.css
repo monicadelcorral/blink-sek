@@ -1,0 +1,472 @@
+/*TOC curso*/
+
+	body:not(.isTablet) #indice .units ul li:hover,
+	#indice .units ul li:focus, #indice .units ul li.active {
+	    background: rgba(12, 38, 104, 0.63);
+	}
+
+	#indice .units ul li {
+	    background: #0C2668;
+	    padding-bottom: 13px;
+	    padding-top: 13px;
+	    margin-bottom: 1px;
+	    -webkit-border-radius: 0px;
+	       -moz-border-radius: 0px;
+	            border-radius: 0px;
+	    -webkit-transition-duration: 1s;
+	       -moz-transition-duration: 1s;
+	         -o-transition-duration: 1s;
+	            transition-duration: 1s;
+	}
+
+	#indice .units ul li.active:not(.disabled),
+	body:not(.isTablet) #indice .units ul li:hover:not(.disabled),
+	#indice .units ul li:focus:not(.disabled) {
+	    border-left: 10px solid #FAA443;
+	    background:  #0C2668;
+	}
+
+	a:hover, a:active, a:focus {
+	    color: #FAA443;
+	    font-weight: 700;
+	}
+
+	#indice .unit-content {
+	    -webkit-box-shadow: 5px 5px 4px 0px rgba(12,38,104,0.46);
+	    -moz-box-shadow: 5px 5px 4px 0px rgba(12,38,104,0.46);
+	    box-shadow: 5px 5px 4px 0px rgba(12,38,104,0.46);
+	    -webkit-border-radius: 8px;
+	    -moz-border-radius: 8px;
+	    border-radius: 0px;
+	}
+
+	#indice .unit-content .actividades .item .title {
+	    font-weight: 400;
+	}
+
+
+	body:not(.isTablet) #indice .units ul li:not(.disabled) a:hover .title, body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
+	    font-weight: 900;
+	    text-transform: uppercase;
+	}
+
+	#indice .units ul li a .title {
+	    color: #fff;
+	    text-transform: uppercase;
+	    font-weight: 100;
+	}
+
+	#indice .unit-content .header .title {
+	    color: #fff;
+	    text-transform: uppercase;
+	    font-weight: 400;
+	    font-size: 2.6rem;
+	}
+
+	#indice .unit-content .actividades .item .text {
+	    margin-left: 0px;
+	}
+
+	.content_type_clase_colegios_sek .btn-primary, .btn-primary.disabled, .btn-primary.disabled:hover, .btn-primary.disabled:focus {
+	    margin-top: 0px;
+	    background-color: #0c2668;
+	    -webkit-border-radius: 0px;
+	       -moz-border-radius: 0px;
+	            border-radius: 0px;
+	}
+
+/* General */
+	.cke_contents  table {
+		margin-bottom: 10px;
+	}
+
+	.is_app.content_type_clase_colegios_sek {
+		padding-top: 0px;
+	}
+
+	.content_type_clase_colegios_sek #actividad {
+		margin-bottom: 0px;
+		-webkit-transform: none;
+		-webkit-transform-style: flat;
+	}
+
+	.content_type_clase_colegios_sek .slide-wrapper,
+	.cke_contents {
+		text-align: justify;
+	}
+
+@media screen and (max-width: 768px) {
+	#actividad .carousel-inner .item-container::before {
+		right: 20px;
+	}
+}
+
+	#actividad .carousel-inner .item-container {
+		background-image: none;
+		margin: 20px auto 30px;
+		padding: 0px;
+		padding-bottom: 90px;
+		position: relative;
+	}
+
+	.content_type_clase_colegios_sek #actividad .content .header .title img,
+	.content_type_clase_colegios_sek #actividad .content .header .chapter {
+		display: none;
+	}
+
+	#indice .units ul li a .number,
+	#indice .unit-content .header .number
+	 {
+		visibility: hidden;
+	}
+
+	.content_type_clase_colegios_sek #actividad .content .header {
+		border: none;
+	}
+
+	.content_type_clase_colegios_sek #actividad .content .header .title {
+		margin-top: -30px;
+		padding-top: 30px;
+		padding-bottom: 10px;
+		background: url('images/Logo_slide.png') top right / 50px auto no-repeat;
+	}
+
+	.content_type_clase_colegios_sek #actividad .content .header .title h3 {
+		font-size: 3.2rem;
+		padding: 10px;
+		margin-top: 0px;
+		display: block;
+		margin-top: 34px;
+		color: #fff;
+		background: #002d70;
+	}
+
+	.content_type_clase_colegios_sek #actividad .texto_curso {
+		font-size: 1.7rem;
+	}
+
+	.texto_curso p {
+	    line-height: 2.4rem ! important;
+	    margin-bottom: 20px;
+	    font-size: 1.7rem;
+}
+	.texto_curso p:last-of-type {
+		margin-bottom: 15px;
+	}
+
+	.content_type_clase_colegios_sek #actividad .texto_curso li,
+	.content_type_clase_colegios_sek #actividad .workspace ul li li {
+		margin-bottom: 10px;
+		font-size: 1.7rem;
+	}
+
+	#actividad .class_slide {
+    	padding: 40px 97px 0px;
+	}
+
+	#actividad .class_slide:last-of-type {
+	    padding-bottom: 100px;
+	}
+
+	#actividad .slide-concatenate .class_slide {
+	    padding-bottom: 20px;
+	}
+
+	#actividad .slide-concatenate:last-of-type .class_slide {
+	    padding-bottom: 100px;
+	}
+
+	.content_type_clase_colegios_sek .slide_main input {
+		color: #555;
+		background-color: #fff;
+		background-image: none;
+		border: 1px solid #ccc;
+		-webkit-border-radius: 4px;
+		   -moz-border-radius: 4px;
+		        border-radius: 4px;
+		-webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+		-moz-box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+		     box-shadow: inset 0 1px 1px rgba(0,0,0,0.075);
+		-webkit-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+		-webkit-transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+		transition: border-color ease-in-out .15s, -webkit-box-shadow ease-in-out .15s;
+		-o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+		-moz-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -moz-box-shadow ease-in-out .15s;
+		transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+		transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s, -webkit-box-shadow ease-in-out .15s, -moz-box-shadow ease-in-out .15s;
+	}
+
+	.content_type_clase_colegios_sek .slide_main input:focus {
+		border-top-color: #3AC62A;
+		border-right-color: #3AC62A;
+		border-bottom-color: #3AC62A;
+		border-left-color: #3AC62A;
+		outline-width: 0px;
+		outline-style: none;
+		-webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(133, 200, 57, 0.6);
+		   -moz-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(133, 200, 57, 0.6);
+		        box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.075) inset, 0px 0px 8px rgba(133, 200, 57, 0.6);
+	}
+
+	.content_type_clase_colegios_sek .slide_main input[disabled],
+	.content_type_clase_colegios_sek .slide_main input[readonly],
+	fieldset[disabled] .content_type_clase_colegios_sek .slide_main input {
+		cursor: not-allowed;
+		background-color: #eee;
+		opacity: 1;
+	}
+
+	.content_type_clase_colegios_sek .slide_main input.respuesta_ok {
+		border-color: #57e900;
+		background: #D1F3BD;
+	}
+
+	.content_type_clase_colegios_sek .slide_main input.respuesta_ko {
+		border-color: #FF3626;
+		background: #FFA49D;
+	}
+
+	.content_type_clase_colegios_sek .slide_main input.solucion {
+		border-color: #00BDFF;
+		background: #B6ECFF;
+	}
+
+	table {
+		margin-bottom: 20px;
+	}
+
+	#actividad .content a {
+	    color: #ff9000;
+	    text-decoration: underline;
+	}
+
+	#actividad .content a:hover,
+	#actividad .content a:active,
+	#actividad .content a:focus {
+	    font-weight: bold;
+	}
+/**/
+
+/* Navbar */
+	.analytics .panel a:active, a:focus {
+	    color: #ff9000;
+	}
+
+	.slider-indicators li,
+	.edit .slider-indicators li {
+		background-color: #ffffff;
+	    color: #00599C;
+	}
+
+	.slider-indicators .active,
+	.slider-indicators li:hover,
+	.edit .slider-indicators .active,
+	.edit .slider-indicators li:hover {
+	    background-color:  #fbb467;
+	    color: #ffffff;
+	}
+
+	/*.logo-publisher {
+		display: inline-block;
+		background: url('logo3.png') no-repeat;
+		background-size: contain;
+		height: 40px;
+		width: 150px;
+		position: absolute;
+		top: 2px;
+		left: 30px;
+	}*/
+/**/
+
+/* CKEDITOR */
+	.bck-title1,
+	.bck-title2,
+	.bck-title3 {
+	 	color: #c7c00f;
+	}
+
+	.bck-title1 {
+	    color: #006cba;
+	    font-size: 2.0rem;
+	}
+
+	.bck-title2 {
+		font-size: 2.5rem;
+	}
+
+	.bck-title3 {
+		font-size: 2.3rem;
+		font-weight: normal;
+	}
+
+	.bck-enfasis {
+	   color: #ff9000;
+	   font-weight: 500;
+	}
+
+	.texto_curso ul li:before,
+	.workspace ul li ul li:before,
+	.cke_contents ul li:before {
+		font-size: 1.7rem;
+	    background-color: transparent;
+	    -webkit-border-radius: 0%;
+	       -moz-border-radius: 0%;
+	            border-radius: 0%;
+	    margin-top: 0px;
+	}
+
+	.foro_wiki_cke_text ul li:before,
+	.texto_curso ul li:before,
+	.workspace:not(.test) ul li ul li:before,
+	.cke_contents ul li:before,
+	.preview ul li:before,
+	.classify-item ul li:before {
+		font-size: 1.7rem;
+	    content: "-";
+	}
+
+	.foro_wiki_cke_text ul li,
+	.texto_curso ul li,
+	.workspace ul li ul li,
+	.cke_contents ul li,
+	.preview ul li {
+		font-size: 1.7rem;
+	    padding-left: 38px;
+	}
+
+	.foro_wiki_cke_text ul.bck-ul1 li:before,
+	.texto_curso ul.bck-ul1 li:before,
+	.workspace:not(.test) li ul.bck-ul1 li:before,
+	.cke_contents ul.bck-ul1 li:before,
+	.preview ul.bck-ul1 li:before,
+	.classify-item ul.bck-ul1 li:before {
+		font-size: 1.7rem;
+	    content: "";
+		background-color: #ff9000;
+	    -webkit-border-radius: 100%;
+	       -moz-border-radius: 100%;
+	            border-radius: 100%;
+	    width: 8px;
+	    height: 8px;
+	    margin-top: 8px;
+	}
+
+
+	.content .bck-ol li {
+		counter-increment: bck-li-counter 1;
+		position: relative;
+		padding-left: 34px;
+	}
+
+	.content .bck-ol li:before {
+	  content: counter(bck-li-counter)'';
+	  position: absolute;
+	  margin-left: -31px;
+	  font-weight: bold;
+	  text-align: right;
+	  color: #011A53;
+	  font-size: larger;
+	  margin-top: -2px;
+	}
+
+	.content table:not(.rf-tablegrid) {
+		border: 1px solid #CBCCCD;
+	}
+
+	.content table:not(.rf-tablegrid) td,
+	.content table:not(.rf-tablegrid) th {
+		border: 1px solid #CBCCCD;
+		padding: 7px;
+		font-size: 1.7rem;
+	}
+
+
+	.bck-td1 {
+	    color: #006cba;
+	    font-weight: normal;
+	    background-color: rgb(238, 238, 238);
+	}
+
+
+	.box-1 {
+	    padding: 10px;
+	    border-color: #b7cce2;
+	    -webkit-box-shadow: 2px 0px 20px -4px #b7cce2;
+	    -moz-box-shadow: 2px 0px 20px -4px #2A93D1;
+	    box-shadow: 2px 0px 20px -4px #b7cce2;
+	}
+
+	.box-1 .bck-title {
+	    font-weight: bold;
+	    border-bottom: 1px solid #006cba;
+	}
+
+	.box-1 .bck-content {
+	    padding-top: 20px;
+	}
+
+
+/**/
+
+@media screen and (max-width: 1099px) {
+    .body_clase .content-wrapper {
+        max-width: 100%;
+    }
+
+    #actividad .content {
+        -webkit-border-radius: 0;
+           -moz-border-radius: 0;
+                border-radius: 0;
+    }
+
+    #actividad .carousel-inner .item-container {
+        margin: 0;
+        width: 100% !important;
+        max-width: none;
+        -webkit-box-shadow: none;
+           -moz-box-shadow: none;
+                box-shadow: none;
+        margin-bottom: 20px;
+    }
+
+    .ipad #actividad .carousel-inner .item-container {
+  		border-right: 1px solid #eee;
+    }
+}
+
+
+
+@media screen and (max-width: 768px) {
+    #actividad .carousel-inner .class_slide {
+        padding: 40px 20px 0px;
+    }
+
+    .navigator {
+        padding: 0px 20px;
+    }
+
+    .bck-img.right, img[style~="float:right"] {
+        max-width: 50%
+    }
+
+    .bck-img.left, img[style~="float:left"] {
+        max-width: 50%
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+
+    .bck-img.right, img[style~="float:right"] {
+        width: 100%;
+    }
+
+    .bck-img.left, img[style~="float:left"] {
+        width: 100%;
+    }
+
+    #actividad .carousel-inner .item-container {
+		padding: 40px 20px 90px;
+	}
+
+}
