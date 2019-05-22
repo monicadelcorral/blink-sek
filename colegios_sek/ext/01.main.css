@@ -1,0 +1,117 @@
+/* TOC curso */
+
+#indice .units .list-units {
+  margin-top: -8px;
+}
+
+#indice .units ul li {
+  background: #0C2668;
+  position: relative;
+  padding-bottom: 0;
+  padding-top: 0;
+  margin-bottom: 1px;
+  border-left: 0 solid #FAA443;
+  max-height: 0;
+  transition: all .25s linear;
+  overflow: hidden;
+}
+
+
+#indice .units ul li.active:not(.disabled),
+body:not(.isTablet) #indice .units ul li:hover:not(.disabled),
+#indice .units ul li:focus:not(.disabled) {
+  border-left-width: 10px ;
+  background:  #0C2668;
+}
+
+body:not(.isTablet) #indice .units ul li:not(.disabled) a:hover .title,
+body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
+  text-transform: none;
+  font-weight: 300;
+}
+
+#indice .units ul li a:not(.delete) {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+#indice .units ul li a .title {
+  color: #fff;
+  text-transform: none;
+  font-weight: 300;
+}
+
+
+#indice .unit-content .actividades .item .text {
+  margin-left: 0px;
+}
+
+/* ToC Subunit */
+
+#indice .units ul li.sek-toc-subunit-active {
+  max-height: 100px;
+}
+
+#indice .units ul li.sek-toc-subunit-active.active:not(.disabled),
+body:not(.isTablet) #indice .units ul li.sek-toc-subunit-active:hover:not(.disabled),
+#indice .units ul li.sek-toc-subunit-active:focus:not(.disabled) {
+  background: #6d6a94;
+  border-left-width: 0;
+  color: #0C2668;
+}
+
+#indice .unit-content .header .title {
+  text-transform: none;
+}
+
+
+/* ToC Header */
+
+#indice .units ul li.sek-toc-unithead {
+  margin-top: 8px;
+  max-height: none !important;
+}
+#indice .units ul li.sek-toc-unithead a:not(.delete) {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+
+#indice .units ul li.sek-toc-unithead a .title::before {
+  content: '';
+  display: block;
+  position: absolute;
+  right: 5px;
+  top: 50%;
+  background: url("../images/dropdowns.png") 0 0 no-repeat;
+  background-size: 25px 9px;
+  width: 12px;
+  height: 9px;
+  transform: translate(0,-50%);
+}
+
+#indice .units ul li.sek-toc-unithead-ancestor {
+  border-left-width: 10px ;
+}
+#indice .units ul li.sek-toc-unithead-ancestor a .title::before {
+  background-position: -16px 0px;
+}
+
+#indice .units ul li.sek-toc-unithead a .title {
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+body:not(.isTablet) #indice .units ul li.sek-toc-unithead:not(.disabled) a:hover .title,
+body:not(.isTablet) #indice .units ul li.sek-toc-unithead.active:not(.disabled) a .title {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+#indice .unit-content.sek-toc-unithead .header .title {
+  text-transform: uppercase;
+}
+
+/* Without parent */
+
+/*#indice .units ul li.sek-toc-subunit-woparent a .title {}*/
