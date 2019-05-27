@@ -1,15 +1,12 @@
 /* TOC curso */
 
-#indice .units .list-units {
-  margin-top: -8px;
-}
-
 #indice .units ul li {
   background: #0C2668;
   position: relative;
   padding-bottom: 0;
   padding-top: 0;
-  margin-bottom: 1px;
+  margin-bottom: 0;
+  margin-top: 0;
   border-left: 0 solid #FAA443;
   max-height: 0;
   transition: all .25s linear;
@@ -50,6 +47,7 @@ body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
 
 #indice .units ul li.sek-toc-subunit-active {
   max-height: 100px;
+  margin-bottom: 1px;
 }
 
 #indice .units ul li.sek-toc-subunit-active.active:not(.disabled),
@@ -68,7 +66,8 @@ body:not(.isTablet) #indice .units ul li.sek-toc-subunit-active:hover:not(.disab
 /* ToC Header */
 
 #indice .units ul li.sek-toc-unithead {
-  margin-top: 8px;
+  margin-top: 0;
+  margin-bottom: 1px;
   max-height: none !important;
 }
 #indice .units ul li.sek-toc-unithead a:not(.delete) {
@@ -76,23 +75,50 @@ body:not(.isTablet) #indice .units ul li.sek-toc-subunit-active:hover:not(.disab
   padding-top: 20px;
 }
 
-#indice .units ul li.sek-toc-unithead a .title::before {
+#indice .units ul li.sek-toc-unithead .sek-toc-unithead-button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  height: 100%;
+  width: 60px;
+  border: 0;
+  border-left: 1px solid rgba(255,255,255,.25);
+  border-bottom: 1px solid rgba(255,255,255,.25);
+  background: none;
+  overflow: visible;
+  padding: 0;
+  outline: none;
+}
+#indice .units ul li.sek-toc-unithead .sek-toc-unithead-button::before {
   content: '';
   display: block;
   position: absolute;
-  right: 5px;
+  left: 50%;
   top: 50%;
   background: url("../images/dropdowns.png") 0 0 no-repeat;
   background-size: 25px 9px;
   width: 12px;
   height: 9px;
-  transform: translate(0,-50%);
+  transform: translate(-50%,-50%);
 }
 
-#indice .units ul li.sek-toc-unithead-ancestor {
-  border-left-width: 10px ;
+
+#indice .units ul li.sek-toc-unithead-ancestor-active {
+  border-left-width: 10px;
+  border-left-color: #6d6a94;
 }
-#indice .units ul li.sek-toc-unithead-ancestor a .title::before {
+
+#indice .units ul li.sek-toc-open,
+#indice .units ul li.sek-toc-unithead-ancestor,
+#indice .units ul li.sek-toc-unithead.active {
+  border-left-width: 10px;
+}
+
+#indice .units ul li.sek-toc-unithead-ancestor.sek-toc-unithead-ancestor-active {
+  border-left-color: #FAA443;
+}
+
+#indice .units ul li.sek-toc-unithead-ancestor .sek-toc-unithead-button::before {
   background-position: -16px 0px;
 }
 
