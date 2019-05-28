@@ -1,6 +1,6 @@
 /* TOC curso */
 
-#indice .units ul li {
+body:not(.edit) #indice .units ul li {
   background: #0C2668;
   position: relative;
   padding-bottom: 0;
@@ -14,73 +14,79 @@
 }
 
 
-#indice .units ul li.active:not(.disabled),
-body:not(.isTablet) #indice .units ul li:hover:not(.disabled),
-#indice .units ul li:focus:not(.disabled) {
+body:not(.edit) #indice .units ul li.active:not(.disabled),
+body:not(.isTablet):not(.edit) #indice .units ul li:hover:not(.disabled),
+body:not(.edit) #indice .units ul li:focus:not(.disabled) {
   border-left-width: 10px ;
   background:  #0C2668;
 }
 
-body:not(.isTablet) #indice .units ul li:not(.disabled) a:hover .title,
-body:not(.isTablet) #indice .units ul li.active:not(.disabled) a .title {
+body:not(.isTablet):not(.edit) #indice .units ul li:not(.disabled) a:hover .title,
+body:not(.isTablet):not(.edit) #indice .units ul li.active:not(.disabled) a .title {
   text-transform: none;
   font-weight: 300;
 }
 
-#indice .units ul li a:not(.delete) {
+body:not(.edit) #indice .units ul li a:not(.delete) {
   padding-top: 10px;
   padding-bottom: 10px;
 }
 
-#indice .units ul li a .title {
+body:not(.edit) #indice .units ul li a .title {
   color: #fff;
   text-transform: none;
   font-weight: 300;
 }
 
 
-#indice .unit-content .actividades .item .text {
+body:not(.edit) #indice .unit-content .actividades .item .text {
   margin-left: 0px;
 }
 
 /* ToC Subunit */
 
-#indice .units ul li.sek-toc-subunit-active {
+body:not(.edit) #indice .units ul li.sek-toc-subunit-active {
   max-height: 100px;
   margin-bottom: 1px;
 }
 
-#indice .units ul li.sek-toc-subunit-active.active:not(.disabled),
-body:not(.isTablet) #indice .units ul li.sek-toc-subunit-active:hover:not(.disabled),
-#indice .units ul li.sek-toc-subunit-active:focus:not(.disabled) {
+body:not(.edit) #indice .units ul li.sek-toc-subunit-active.active:not(.disabled),
+body:not(.isTablet):not(.edit) #indice .units ul li.sek-toc-subunit-active:hover:not(.disabled),
+body:not(.edit) #indice .units ul li.sek-toc-subunit-active:focus:not(.disabled) {
   background: #6d6a94;
   border-left-width: 0;
   color: #0C2668;
 }
 
-#indice .unit-content .header .title {
+body:not(.edit) #indice .unit-content .header .title {
   text-transform: none;
 }
 
 
 /* ToC Header */
 
-#indice .units ul li.sek-toc-unithead {
+body:not(.edit) #indice .units ul li.sek-toc-unithead {
   margin-top: 0;
   margin-bottom: 1px;
   max-height: none !important;
 }
-#indice .units ul li.sek-toc-unithead a:not(.delete) {
+body:not(.edit) #indice .units ul li.sek-toc-unithead a:not(.delete) {
   padding-bottom: 20px;
   padding-top: 20px;
+  padding-right: 32px;
 }
 
-#indice .units ul li.sek-toc-unithead .sek-toc-unithead-button {
+body:not(.edit) #indice .units ul li.sek-toc-unithead.sek-toc-unithead_empty a:not(.delete) {
+  padding-right: 10px;
+}
+
+
+body:not(.edit) #indice .units ul li.sek-toc-unithead .sek-toc-unithead-button {
   position: absolute;
   right: 0;
   top: 0;
   height: 100%;
-  width: 60px;
+  width: 28px;
   border: 0;
   border-left: 1px solid rgba(255,255,255,.25);
   border-bottom: 1px solid rgba(255,255,255,.25);
@@ -89,7 +95,7 @@ body:not(.isTablet) #indice .units ul li.sek-toc-subunit-active:hover:not(.disab
   padding: 0;
   outline: none;
 }
-#indice .units ul li.sek-toc-unithead .sek-toc-unithead-button::before {
+body:not(.edit) #indice .units ul li.sek-toc-unithead .sek-toc-unithead-button::before {
   content: '';
   display: block;
   position: absolute;
@@ -100,44 +106,47 @@ body:not(.isTablet) #indice .units ul li.sek-toc-subunit-active:hover:not(.disab
   width: 12px;
   height: 9px;
   transform: translate(-50%,-50%);
+  margin-left: 2px;
+}
+
+body:not(.edit) #indice .units ul li.sek-toc-unithead.sek-toc-unithead_empty .sek-toc-unithead-button {
+  display: none!important;
 }
 
 
-#indice .units ul li.sek-toc-unithead-ancestor-active {
+
+body:not(.edit) #indice .units ul li.sek-toc-unithead-ancestor-active {
   border-left-width: 10px;
   border-left-color: #6d6a94;
 }
 
-#indice .units ul li.sek-toc-open,
-#indice .units ul li.sek-toc-unithead-ancestor,
-#indice .units ul li.sek-toc-unithead.active {
+body:not(.edit) #indice .units ul li.sek-toc-open,
+body:not(.edit) #indice .units ul li.sek-toc-unithead-ancestor,
+body:not(.edit) #indice .units ul li.sek-toc-unithead.active {
   border-left-width: 10px;
 }
 
-#indice .units ul li.sek-toc-unithead-ancestor.sek-toc-unithead-ancestor-active {
+body:not(.edit) #indice .units ul li.sek-toc-unithead-ancestor.sek-toc-unithead-ancestor-active {
   border-left-color: #FAA443;
 }
 
-#indice .units ul li.sek-toc-unithead-ancestor .sek-toc-unithead-button::before {
+body:not(.edit) #indice .units ul li.sek-toc-unithead-ancestor .sek-toc-unithead-button::before {
   background-position: -16px 0px;
+  margin-left: 0;
 }
 
-#indice .units ul li.sek-toc-unithead a .title {
+body:not(.edit) #indice .units ul li.sek-toc-unithead a .title {
   font-size: 16px;
   font-weight: 600;
   text-transform: uppercase;
 }
 
-body:not(.isTablet) #indice .units ul li.sek-toc-unithead:not(.disabled) a:hover .title,
-body:not(.isTablet) #indice .units ul li.sek-toc-unithead.active:not(.disabled) a .title {
+body:not(.isTablet):not(.edit) #indice .units ul li.sek-toc-unithead:not(.disabled) a:hover .title,
+body:not(.isTablet):not(.edit) #indice .units ul li.sek-toc-unithead.active:not(.disabled) a .title {
   text-transform: uppercase;
   font-weight: 600;
 }
 
-#indice .unit-content.sek-toc-unithead .header .title {
+body:not(.edit) #indice .unit-content.sek-toc-unithead .header .title {
   text-transform: uppercase;
 }
-
-/* Without parent */
-
-/*#indice .units ul li.sek-toc-subunit-woparent a .title {}*/

@@ -50,7 +50,6 @@ sekApp.getCourseData = function() {
 
   loadJSON(function(json) {
     sekApp.courseData = json;
-    console.log(sekApp.courseData);
     sekApp.init();
   });
 
@@ -120,6 +119,8 @@ sekApp.getTocInfo = function() {
 // INIT
 
 sekApp.init = function() {
+
+  if ($('body').hasClass('edit')) return;
 
   sekApp.getTocInfo();
 
