@@ -153,10 +153,18 @@ $(document).ready(function() {
 
     if ($(this).hasClass('sek-toc-unithead') && !$(this).hasClass('sek-toc-unithead-ancestor')) {
       $(this)
+        .siblings('li')
+          .removeClass('sek-toc-subunit-active')
+            .siblings('li.sek-toc-unithead')
+            .removeClass('sek-toc-open sek-toc-unithead-ancestor');
+    } else if (!$(this).hasClass('sek-toc-unithead')) {
+      $(this)
+        .prevAll('.sek-toc-unithead', 'li')
+          .first()
+          .addClass('sek-toc-unithead-ancestor-active')
+        .end()
       .siblings('li')
-      .removeClass('sek-toc-subunit-active')
-      .siblings('li.sek-toc-unithead')
-      .removeClass('sek-toc-open sek-toc-unithead-ancestor');
+        .removeClass('sek-toc-unithead-ancestor-active');
     }
     e.stopPropagation();
   });
