@@ -45,6 +45,7 @@ body:not(.edit) #indice .unit-content .actividades .item .text {
 
 /* ToC Subunit */
 
+body:not(.edit) #indice .units ul li.sek-toc-subunit-woparent,
 body:not(.edit) #indice .units ul li.sek-toc-subunit-active {
   max-height: 100px;
   margin-bottom: 1px;
